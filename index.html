@@ -84,6 +84,21 @@
             font-size: 18px;
         }
 
+        /* Description Section */
+        .description {
+            padding: 20px;
+            text-align: center; /* Centrira tekst */
+        }
+
+        .description p {
+            margin-bottom: 15px; /* Dodaj razmak između paragrafa */
+            max-width: 800px; /* Zadrži čitljivost teksta */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-style: italic; /* Postavi font na italic */
+        }
+
         /* Memes Section */
         .memes {
             padding: 50px 20px;
@@ -99,8 +114,20 @@
 
         .meme-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); /* Tri kolone za većinu ekrana */
+            gap: 20px; /* Razmak između itema */
+        }
+
+        @media (max-width: 768px) {
+            .meme-grid {
+                grid-template-columns: repeat(2, 1fr); /* Dvije kolone za ekrane manji od 768px */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .meme-grid {
+                grid-template-columns: repeat(1, 1fr); /* Jedna kolona za vrlo male ekrane */
+            }
         }
 
         .meme-item {
@@ -127,21 +154,6 @@
             color: #666;
             text-align: center;
             font-size: 14px;
-        }
-
-        /* Description Section */
-        .description {
-            padding: 20px;
-            text-align: center; /* Centrira tekst */
-        }
-
-        .description p {
-            margin-bottom: 15px; /* Dodaj razmak između paragrafa */
-            max-width: 800px; /* Zadrži čitljivost teksta */
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            font-style: italic; /* Postavi font na italic */
         }
     </style>
 </head>
@@ -175,9 +187,9 @@
         
         <p><strong>Changpeng Zhao (CZ)</strong> - "Master ringmaster of the Binance circus, managing billions with a smile like he's running a local sushi joint. His secret move: buy the dip, sell the rip (but only when he tells you to!)."</p>
     
-    <iframe width="463" height="823" src="https://www.youtube.com/embed/LtrgP17dw_E" title="Etherium Yükselince Vitalik! 😀- Mavi Kadın #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="463" height="823" src="https://www.youtube.com/embed/xseOlqP9mBw" title="Elon Musk and Donald trump dance video - STAY IN ALIVE #dancevideo  #elonmusk #donaldtrump" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="463" height="823" src="https://www.youtube.com/embed/oAt4qdMW_8E" title="💪👦Pavel Durov Evolution #shorts #paveldurov #evolution #transformation #vk #telegram #durov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="463" height="823" src="https://www.youtube.com/embed/LtrgP17dw_E" title="Etherium Yükselince Vitalik! 😀- Mavi Kadın #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="463" height="823" src="https://www.youtube.com/embed/xseOlqP9mBw" title="Elon Musk and Donald trump dance video - STAY IN ALIVE #dancevideo  #elonmusk #donaldtrump" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="463" height="823" src="https://www.youtube.com/embed/oAt4qdMW_8E" title="💪👦Pavel Durov Evolution #shorts #paveldurov #evolution #transformation #vk #telegram #durov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <!-- Memes Section -->
@@ -199,42 +211,43 @@
             <div class="meme-item">
                 <img src="https://i.imgur.com/t281xop.png" alt="Meme 4">
                 <p>Melon Musk</p>
-         </div>
+            </div>
             <div class="meme-item">
                 <img src="https://i.imgur.com/rNkYEJY.jpeg" alt="Meme 5">
                 <p>Roar like a dog!</p>
-         </div>
+            </div>
             <div class="meme-item">
                 <img src="https://i.imgur.com/EgvsZF7.jpeg" alt="Meme 6">
                 <p>We def ain't normal here.</p>
             </div>
-         <div class="meme-item">
+            <div class="meme-item">
                 <img src="https://i.imgur.com/KctXrhD.jpeg" alt="Meme 7">
                 <p>Weedon Musk</p>
-         </div>
-         <div class="meme-item">
+            </div>
+            <div class="meme-item">
                 <img src="https://i.imgur.com/8uWkWno.jpeg" alt="Meme 8">
                 <p>Torso!</p>
-         </div>
-        <div class="meme-item">
+            </div>
+            <div class="meme-item">
                 <img src="https://i.imgur.com/u05YWQl.jpeg" alt="Meme 9">
                 <p>WHAT IF???</p>
-         </div>
-        <div class="meme-item">
+            </div>
+            <div class="meme-item">
                 <img src="https://i.imgur.com/sKMwBSk.jpeg" alt="Meme 10">
                 <p>ELIONS!</p>
             </div>
-         <div class="meme-item">
+            <div class="meme-item">
                 <img src="https://i.imgur.com/7HA5JQR.jpeg" alt="Meme 11">
                 <p>Fatal error!</p>
-         </div>
-         <div class="meme-item">
+            </div>
+            <div class="meme-item">
                 <img src="https://i.imgur.com/bcbbVxW.jpeg" alt="Meme 12">
                 <p>Lil Dump for my tattoos.</p>
-         </div>
-         <div class="meme-item">
+            </div>
+            <div class="meme-item">
                 <img src="https://i.imgur.com/SIB3sDT.jpeg" alt="Meme 13">
                 <p>Program running safe and sound.</p>
+            </div>
         </div>
     </section>
 
